@@ -1,0 +1,252 @@
+@import url(style.css);
+.navbar-utama a {
+  position: relative;
+  font-size: 14px;
+  padding: 0.7em 1.4em;
+  background-color: none;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  color: var(--black);
+}
+
+.navbar-utama a:hover {
+  color: var(--red);
+  box-shadow: var(--box-shadow);
+  font-weight: bold;
+}
+
+.navbar-utama {
+  background: var(--bg-color);
+  z-index: 9999;
+  position: fixed;
+  top: 1.8rem;
+  gap: 0px;
+  display: flex;
+  right: 12rem;
+  align-items: center;
+  color: var(--red);
+  box-shadow: var(--box-shadow);
+  border-radius: 4px;
+}
+
+.nav-menu .cont {
+  padding: 0 2rem 0 4rem;
+}
+.nav-menu .cont > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(134, 144, 158, 0.9);
+  padding: 2rem 0;
+  border-bottom: var(--border);
+}
+
+.nav-menu {
+  width: 38rem;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  left: -100%;
+  top: 0;
+  overflow: auto;
+  transition: 0.4s linear;
+  background: var(--bg-color);
+}
+.nav-menu .cont > .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.nav-menu .cont .logo .logo-nav:hover {
+  box-shadow: var(--box-shadow-inset);
+}
+.nav-menu .cont .logo .logo-nav {
+  transition: all 2s ease;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+.nav-menu .cont .logo .logo-nav img {
+  width: 100%;
+}
+.nav-menu .cont .logo #nav-btn:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: var(--red);
+}
+.nav-menu .cont .logo #nav-btn {
+  
+  z-index: 1000;
+  height: 5rem;
+  width: 5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  color: var(--black);
+  background: var(--bg-color);
+}
+.nav-menu .cont .logo .nav-btn:hover {
+  color: var(--red);
+}
+.nav-menu .cont .logo #nav-btn {
+  font-size: 20px;
+  color: var(--black);
+  padding: 3px;
+}
+.nav-menu .cont .navbar2 {
+  display: block;
+  padding-bottom: 7rem;
+}
+.nav-menu .cont .navbar2 a:hover {
+  padding-left: 1em;
+  box-shadow: var(--box-shadow);
+  color: var(--red);
+}
+.nav-menu .cont .navbar2 a {
+  text-transform: uppercase;
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 0;
+  padding: 0.7em 0em 0.7em 0em;
+}
+
+/* .icons menu  */
+.icons2 {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 116px;
+  margin-top: 20px 0 5rem 0;
+}
+.cont .icons2 .faficon {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+}
+.icons2 .faficon img {
+  width: 20px;
+}
+.cont .icons2 a {
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  box-shadow: var(--box-shadow);
+  border-radius: 6px;
+}
+.cont .icons2 a img {
+  width: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.cont .icons2 a img:hover,
+.icons a img:hover {
+  transform: scale(1.2);
+}
+
+.cont .icons2 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--abu);
+  padding: 2rem 0 1rem 0;
+}
+
+/* .icons menu  */
+
+.btn-login:hover {
+  box-shadow: var(--box-shadow);
+  color: var(--red);
+  text-shadow: none;
+}
+.btn-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: var(--black);
+  /* text-shadow: 2px 2px rgb(116, 116, 116); */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 15px;
+  background: none;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.btn-login:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+button svg {
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+
+.btn-login:hover svg {
+  transform: scale(3) translate(50%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.btn-login:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+.btn-login:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+
+.logo-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 1.5rem;
+  left: 2rem;
+}
+.logo-icon h1{
+  color: var(--black);
+  text-shadow: var(--box-shadow);
+  margin-left: 4px;
+}
+.logo-icon img {
+  width: 60px;
+  height: 60px;
+}

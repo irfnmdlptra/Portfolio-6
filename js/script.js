@@ -1,14 +1,24 @@
 let menu = document.querySelector('#menu-btn');
-let header = document.querySelector('.header');
+let Close = document.querySelector('#nav-btn');
+let nav = document.querySelector('.nav-menu');
 
 menu.onclick = () =>{
     menu.classList.toggle('fa-times');
-    header.classList.toggle('active');
+}
+
+menu.addEventListener('click', function(){
+    nav.classList.toggle('active');
+
+})
+
+Close.onclick = () =>{
+    Close.classList.toggle('fa-bars');
+    nav.classList.remove('active');
 }
 
 window.onscroll = () =>{
     menu.classList.remove('fa-times');
-    header.classList.remove('active');
+    nav.classList.remove('active');
 }
 
 let themeToggler = document.querySelector('#theme-toggler');
@@ -21,3 +31,9 @@ themeToggler.onclick = () =>{
         document.body.classList.remove('active');
     }
 }
+
+
+  
+  
+  
+  

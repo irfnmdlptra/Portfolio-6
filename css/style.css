@@ -98,6 +98,7 @@ section {
   height: 100%;
   padding: 2rem;
   text-align: center;
+  display: none;
 }
 
 .header .user img {
@@ -129,7 +130,7 @@ section {
   padding: 0.7rem;
   border-radius: 10px;
   font-size: 2rem;
-  /* box-shadow: var(--box-shadow); */
+   box-shadow: var(--box-shadow); 
   color: var(--black);
 }
 
@@ -189,6 +190,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 100vh;
 }
 
 .home .content h3 {
@@ -403,7 +405,7 @@ section {
 }
 
 .portfolio .box-container .box {
-  height: 25rem;
+  height: 20rem;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: var(--box-shadow);
@@ -411,6 +413,9 @@ section {
   border: 1rem solid transparent;
 }
 
+.portfolio .box-container .box img:hover{
+  transform: scaleZ(-20px);
+}
 .portfolio .box-container .box img {
   height: 100%;
   width: 100%;
@@ -506,7 +511,7 @@ section {
 .btn2 p {
   position: absolute;
   top: 1.2rem;
-  left: 2.2em;
+  left: 2.3em;
   margin: 0;
   padding: 0;
   transition: 0.5s;
@@ -551,11 +556,16 @@ section {
     padding: 0 3%;
   }
 
-  .header {
-    left: -110%;
+  .navbar-utama {
+    transform: translateY(-200px);
+    transition: all 2s linear;
+    z-index: 9999;
+  }
+  .logo-icon{
+    transform: translateX(8rem);
   }
 
-  .header.active {
+  .nav-menu.active {
     left: 0%;
     transition: 0.4s linear;
   }
