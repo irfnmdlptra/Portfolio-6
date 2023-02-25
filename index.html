@@ -16,33 +16,21 @@
 
 </head>
 <body>
+
+    <div class="atas"></div>
     
-<!-- header section starts  -->
-<header class="header" style="display: none;" >
-
-    <div class="user">
-        <img src="image/user-img.png" alt="">
-        <h3>Irfan Syahputra</h3>
-        <p>front-end developer</p>
-    </div>
-
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#services">services</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#contact">contact</a>
-    </nav>
-</header>
 <!-- Nav menu  -->
 <!-- logo  -->
 <div class="logo-icon">
     <img src="image/sds.png" alt="">
-    <h1>ippams</h1>
+    <button data-text="Awesome" class="button-logo">
+        <span class="actual-text">&nbsp;Ippams&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">&nbsp;Ippams&nbsp;</span>
+    </button>
 </div>
 
 <!-- header section starts  -->
-<nav class="navbar-utama">
+<nav class="navbar-utama nav-header">
     <a class="scroll-link" href="#home">Home</a>
     <a class="scroll-link" href="#about">About</a>
     <a class="scroll-link" href="#services">Services</a>
@@ -69,11 +57,11 @@
 
 <!-- header section ends -->
 
-<div id="menu-btn" class="fas fa-bars"></div>
+<div id="menu-btn" class="fas fa-bars nav-header"></div>
 
 <!-- theme toggler  -->
 
-<div id="theme-toggler" class="fas fa-moon"></div>
+<div id="theme-toggler" class="fas fa-moon nav-header"></div>
 
 <!-- home section starts  -->
 <div class="nav-menu">
@@ -93,7 +81,7 @@
     </nav> 
     <div class="icons2">
       <div class="icons-sosmed2">
-        <p>find with me</p>
+        <p style="color:var(--black)">find with me</p>
         <div class="faficon">
           <a href=""><img src="image/fb.png" alt=""></a>
           <a href=""><img src="image/igg.png" alt=""></a>
@@ -111,13 +99,36 @@
         <a href="#" class="btn">download CV</a>
     </div>
 
-    <div class="share">
+    <ul class="share-icon">
+        <li class="icon facebook">
+            <span class="tooltip" style="background:#1877F2 ;">Facebook</span>
+            <span> <a href="#" class="fab fa-facebook-f"></a></span>
+        </li>
+        <li class="icon twitter">
+            <span class="tooltip" style="background-color: #1DA1F2;">Twitter</span>
+            <span>  <a href="#" class="fab fa-twitter"></a></span>
+        </li>
+        <li class="icon instagram">
+            <span class="tooltip" style="background-color: #E4405F;">Instagram</span>
+            <span>  <a href="#" class="fab fa-instagram"></a></span>
+        </li>
+        <li class="icon linkedin">
+            <span class="tooltip" style="background: #0e76a8 ;">linkedin</span>
+            <span>  <a href="#" class="fab fa-linkedin"></a></span>
+        </li>
+        <li class="icon whatsapp">
+            <span class="tooltip" style="background:#4fce5d ;">whatsapp</span>
+            <span>  <a href="#" class="fab fa-whatsapp"></a></span>
+        </li>
+    </ul>
+
+    <!-- <div class="share">
         <a href="#" class="fab fa-facebook-f"></a>
         <a href="#" class="fab fa-twitter"></a>
         <a href="#" class="fab fa-instagram"></a>
         <a href="#" class="fab fa-linkedin"></a>
         <a href="#" class="fab fa-pinterest"></a>
-    </div>
+    </div>  -->
 
 </section>
 

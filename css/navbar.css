@@ -80,7 +80,6 @@
   color: var(--red);
 }
 .nav-menu .cont .logo #nav-btn {
-  
   z-index: 1000;
   height: 5rem;
   width: 5rem;
@@ -127,7 +126,7 @@
   flex-wrap: wrap;
   width: 100%;
   height: 116px;
-  margin-top: 20px 0 5rem 0;
+  margin: 1px 0;
 }
 .cont .icons2 .faficon {
   display: flex;
@@ -238,15 +237,199 @@ button svg {
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index: 9999;
   top: 1.5rem;
   left: 2rem;
 }
-.logo-icon h1{
+.logo-icon h1 {
   color: var(--black);
-  text-shadow: var(--box-shadow);
   margin-left: 4px;
 }
 .logo-icon img {
   width: 60px;
   height: 60px;
+}
+
+.atas {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding-bottom: 10rem;
+  background: transparent;
+}
+
+/* .logo hover  */
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button-logo {
+  --border-right: 6px;
+  /* --text-stroke-color: rgba(255,255,255,0.6); */
+  --animation-color: #37ff8b;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  background: none;
+  font-size: 2em;
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 600;
+  /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6); */
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: #ff014f;
+  width: 0%;
+  inset: 0;
+  border-right: 6px solid #ff014f;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px #ff014f;
+}
+/* hover */
+.button-logo:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px #ff014f);
+}
+
+/* .icon   */
+.share-icon {
+  display: inline-flex;
+  list-style: none;
+  margin-top: 10rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.share-icon .icon a:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: var(--red);
+}
+.share-icon .icon a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  box-shadow: var(--box-shadow);
+  margin: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+}
+.share-icon .icon {
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.share-icon .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #1877f2;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.share-icon .instagram .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #e4405f;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.share-icon .linkedin .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #0e76a8;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.share-icon .whatsapp .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #4fce5d;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.share-icon .facebook .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #1877F2;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.share-icon .twitter .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #1da1f2;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.share-icon .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.share-icon .icon:hover span,
+.share-icon .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }

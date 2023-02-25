@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
-    --hijau:#25d366;
-    --text-green:#fff;
-    --green:#25d366;
+  --hijau: #25d366;
+  --text-green: #fff;
+  --green: #25d366;
   --red: #ff014f;
   --black: #444;
   --light-color: #777;
@@ -34,21 +34,21 @@ html {
 
 body {
   background: var(--bg-color);
-  padding: 0 150px ;
+  padding: 0 150px;
 }
 
 body.active {
-    --hijau:#fff;
-    --text-green:#ff014f;
+  --hijau: #fff;
+  --text-green: #ff014f;
   --red: #ff014f;
-  --green:#ff014d00;
+  --green: #ff014d00;
   --black: #fff;
   --light-color: #ddd;
   --bg-color: #222;
   --border: 0.1rem solid rgba(0, 0, 0, 0.4);
   --box-shadow: 0.4rem 0.4rem 1rem #111, -0.4rem -0.4rem 1rem #333;
   --box-shadow-inset: 0.4rem 0.4rem 1rem #111 inset, -0.4rem -0.4rem 1rem #333 inset;
-  --box-shadow-color:  0.4rem 0.4rem 1rem #111 inset, -0.4rem -0.4rem 1rem #333 inset;
+  --box-shadow-color: 0.4rem 0.4rem 1rem #111 inset, -0.4rem -0.4rem 1rem #333 inset;
 }
 
 section {
@@ -130,7 +130,7 @@ section {
   padding: 0.7rem;
   border-radius: 10px;
   font-size: 2rem;
-   box-shadow: var(--box-shadow); 
+  box-shadow: var(--box-shadow);
   color: var(--black);
 }
 
@@ -413,7 +413,7 @@ section {
   border: 1rem solid transparent;
 }
 
-.portfolio .box-container .box img:hover{
+.portfolio .box-container .box img:hover {
   transform: scaleZ(-20px);
 }
 .portfolio .box-container .box img {
@@ -423,6 +423,7 @@ section {
 }
 
 .portfolio .box-container .box .content {
+  transition: all 5.s;
   position: absolute;
   top: 0;
   left: 0;
@@ -436,6 +437,7 @@ section {
 
 .portfolio .box-container .box:hover .content {
   transform: scale(1);
+  transition: 0.5s all;
 }
 
 .portfolio .box-container .box .content h3 {
@@ -561,7 +563,7 @@ section {
     transition: all 2s linear;
     z-index: 9999;
   }
-  .logo-icon{
+  .logo-icon {
     transform: translateX(8rem);
   }
 
