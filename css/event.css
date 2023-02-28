@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url(style.css);
+
+/* .home2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+} */
+
+.home2 .row {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform: translateY(10rem);
+  }
+  
+  
+  .home2 .row .image {
+    flex: 1 1 25rem;
+    width: 500px;
+    height: 300px;
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    position: relative;
+  }
+  
+  .home2 .row .image img {
+      width: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    float: left;
+}
+
+.home2 .row .image .download {
+    position: absolute;
+    transform: translate(55%, 30rem);
+}
+  .home2 .row .content {
+    flex: 1 1 45rem;  
+  }
+  
+  .home2 .row .content > h3 {
+    color: var(--black);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .home2 .row .content > h1 span {
+    color: var(--red);
+  }
+  .home2 .row .content > h1 {
+    color: var(--black);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 2rem 0;
+    line-height: 21px;
+  }
+  .home2 .row .content > h2 {
+    color: var(--black);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 2rem 0;
+    line-height: 21px;
+  }
+  
+  .home2 .row .content > p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color:var(--gray);
+  }
+  
+  /* icons  */
+  
+  .content .icons {
+    display: block;
+    width: 370px;
+    height: 116px;
+    transform: translateY(5rem);
+  }
+ 
+  .content .icons a:hover{
+    transform: translateY(-5px);
+  }
+  .content .icons a {
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 6px;
+  }
+  .content .icons p {
+    color: var(--gray);
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+    margin: 20px 0;
+    text-transform: uppercase;
+  }
+  

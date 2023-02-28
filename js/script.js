@@ -1,8 +1,6 @@
 let menu = document.querySelector('#menu-btn');
 let Close = document.querySelector('#nav-btn');
 let nav = document.querySelector('.nav-menu');
-// let navAtas = document.querySelectorAll('.nav-header');
-// let atas = document.querySelector('.atas');
 
 menu.onclick = () =>{
     menu.classList.toggle('fa-times');
@@ -34,48 +32,40 @@ themeToggler.onclick = () =>{
     }
 }
 
+// mengambil semua elemen a dalam elemen dengan kelas navbar-utama
+const links = document.querySelectorAll('.navbar-utama a');
+const ubahWarna = document.getElementById('ubahWarna');
+
+// menambahkan event listener click pada setiap elemen a
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    // menghapus class "click" dari semua elemen a
+    links.forEach(otherLink => {
+      otherLink.classList.remove('click');
+    });
+    // menambahkan class "click" ke elemen a yang diklik
+    link.classList.add('click');
+  });
+});
+
+ubahWarna.addEventListener('click', function(){
+    const r = Math.round(Math.random() * 255 + 1);
+    const g = Math.round(Math.random() * 255 + 1);
+    const b = Math.round(Math.random() * 255 + 1);
+    document.body.style.background = 'rgb('+ r +','+ g +','+ b +')'
+});
+
 
   
-window.addEventListener('scroll', function() {
-    if (window.scrollY > 0) {
-      atas.style.backgroundColor = '#e6e6e6';
-        for (let i=0; i <= navAtas.length; i++ ){
-          
-            navAtas[i].style.backgroundColor = 'transparent';
-            navAtas[i].style.Color = '#fff';
-        }
+
+// JavaScript
+window.addEventListener("scroll", function() {
+    var navbar = document.querySelector(".navbar");
+    if (window.pageYOffset > 0) {
+      navbar.classList.add("scroll");
     } else {
-      atas.style.backgroundColor = 'transparent';
-      atas.style.backdropFilter = 'none';
+      navbar.classList.remove("scroll");
     }
   });
   
-  
-  
-
-
-  const box1 = document.querySelector('.box1');
-const box2 = document.querySelector('.box2');
-const box3 = document.querySelector('.box3');
-
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-
-  if (scrollY >= 100) {
-    box1.style.boxShadow = '0.4rem 0.4rem 1rem #111, -0.4rem -0.4rem 1rem #333';
-  } else {
-    box1.style.boxShadow = 'none';
-  }
-
-  if (scrollY >= 200) {
-    box2.style.boxShadow = '0.4rem 0.4rem 1rem #111, -0.4rem -0.4rem 1rem #333';
-  } else {
-    box2.style.boxShadow = 'none';
-  }
-
-  if (scrollY >= 300) {
-    box3.style.boxShadow = '0.4rem 0.4rem 1rem #111, -0.4rem -0.4rem 1rem #333';
-  } else {
-    box3.style.boxShadow = 'none';
-  }
-});
+  // CSS

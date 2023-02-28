@@ -52,7 +52,7 @@
   left: -100%;
   top: 0;
   overflow: auto;
-  transition: 0.4s linear;
+  transition: left 2s ease-in-out; 
   background: var(--bg-color);
 }
 .nav-menu .cont > .logo {
@@ -250,14 +250,6 @@ button svg {
   height: 60px;
 }
 
-.atas {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 50px;
-  padding-bottom: 10rem;
-  background: transparent;
-}
 
 /* .logo hover  */
 /* === removing default button style ===*/
@@ -309,17 +301,31 @@ button svg {
 .share-icon {
   display: inline-flex;
   list-style: none;
-  margin-top: 10rem;
   border-radius: 0.5rem;
-  box-shadow: var(--box-shadow);
   padding: 1rem;
   font-family: "Poppins", sans-serif;
   justify-content: center;
 }
 
-.share-icon .icon a:hover {
+.share-icon .facebook  a:hover {
   box-shadow: var(--box-shadow-inset);
-  color: var(--red);
+  color: #1877F2;
+}
+.share-icon .twitter  a:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: #1DA1F2;
+}
+.share-icon .instagram  a:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: #E4405F;
+}
+.share-icon .linkedin  a:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: #0e76a8;
+}
+.share-icon .whatsapp  a:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: #4fce5d;
 }
 .share-icon .icon a {
   height: 5rem;
@@ -327,8 +333,8 @@ button svg {
   line-height: 5rem;
   box-shadow: var(--box-shadow);
   margin: 0.5rem;
-  font-size: 2rem;
   color: var(--black);
+  font-size: 2rem;
   border-radius: 0.5rem;
 }
 .share-icon .icon {
@@ -432,4 +438,9 @@ button svg {
 .share-icon .icon:hover span,
 .share-icon .icon:hover .tooltip {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.click {
+    color: none;
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
 }
